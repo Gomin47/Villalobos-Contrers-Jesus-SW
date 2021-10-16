@@ -1,0 +1,83 @@
+<!doctype html>
+<!--[if lte IE 9]>
+<html lang="en" class="oldie">
+<![endif]-->
+<!--[if gt IE 9]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cifrado AES</title>
+  <link rel="stylesheet" media="all" href="style.css" />
+</head>
+<body>
+<div class="context">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js" ></script>
+    
+        <center>
+            <h1>DESCIFRADO</h1>
+            <br>
+            <table style="margin: 0 auto;">
+                <p> Selecione el tipo de cifrado </p>
+                <br>
+                <select name="tipoAES" id="tipo">
+                    <option value="128">128</option>
+                    
+                    <option value="192">192</option>
+                    
+                    <option value="256">256</option>
+                    
+                </select>
+                <br>
+                <br>
+                <textarea class="form-control" id="txtcifrado" placeholder="Mensaje Cifrado"></textarea>
+                <br>
+                <br>
+                <input class="form-control" type="txt" placeholder="Clave" id="clave" >
+            <td>
+                <input class="btn btn-info" type="button" value="Descifrar" onclick="descifrar()">
+                <br>
+                <br>
+                <p><button class="btn btn-5 hover-border-11"><a href="MenuAES.html">Regresar</a></button></p>
+                <br>
+                <br>
+            </td>
+            <br>
+            <br>
+            <tr>
+               <p> El texto descifrado es:</p>
+                <br>
+                <textarea class="form-control" id="txtdescifrado" placeholder="Texto Descifrado" disabled></textarea>
+            </tr>
+                
+                <br>
+                
+                <p id="txt"></p>
+                
+                <div id="resultado"></div>
+            </table>
+            
+        
+        </center>
+   
+    
+    </div>
+     
+<div class="area" >
+            <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            </ul>
+    </div >
+    <script src="js/logica.js"></script>
+</body>
+</html>
